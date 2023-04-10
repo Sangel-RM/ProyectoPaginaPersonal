@@ -1,0 +1,165 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: #1c232d;
+    --DarkBlueStar: #2f3947;
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --fontSize: 15px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+}
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+}
+.ValorateProduct{
+    width: 415px;
+    height: 420px;
+    background-color: var(--DarkBlue);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+.encapsulamiento{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ValorateProduct .encapsulamiento .iconStar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--DarkBlueStar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.ValorateProduct .encapsulamiento .title{
+    color: var(--White);
+    margin: 0 0 25px 0;
+}
+.ValorateProduct .encapsulamiento p{
+    color: var(--LightGrey);
+    margin: 0 0 33px 0;
+}
+.ValorateProduct .encapsulamiento .cajaDeValoracion{
+    display: flex;
+    justify-content: space-between;
+    height: 47px;
+    margin: 0 0 30px 0;
+}
+.ValorateProduct .encapsulamiento .cajaDeValoracion .cajaValor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    border-radius: 50px;
+    color: var(--LightGrey);
+    background-color: var(--DarkBlueStar);
+    cursor: default;
+}
+.ValorateProduct .encapsulamiento .cajaDeValoracion .cajaValor:hover{
+    background-color: var(--orange);
+    color: var(--White);
+    cursor: pointer;
+}
+.primaryButton{
+    height: 47px;
+    border-radius: 25px;
+    background-color: var(--orange);
+    border: none;
+    font-weight: 700;
+    font-size: var(--fontSize);
+    color: var(--White);
+    cursor: pointer;
+}
+.primaryButton:active{
+    background-color: var(--White);
+    color: var(--orange);
+}
+/* segundo section */
+.TankhValorate{
+    width: 410px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #1c232d;
+    margin: 0 0 20px 0;
+}
+.ImgValorateStar{
+    width: 50%;
+    height: 40%;
+    background-image: url(./images/illustration-thank-you.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contenerdorValorate{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Title{
+    background-color: #262f38;
+    width: 190px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.Title p{
+    color: var(--orange);
+}
+.TankhValorate .contenerdorValorate h1{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.TankhValorate .contenerdorValorate .p{
+    color: var(--LightGrey);
+}
+.active{
+    display: block;
+}
+.desactive{
+    display: none;
+}
+.activeStar{
+    background-color: var(--White);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
